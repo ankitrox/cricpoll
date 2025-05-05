@@ -1,0 +1,23 @@
+.cricpoll-auth {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 50px auto;
+}
+
+.cricpoll-auth h2 {
+    margin-top: 0;
+    color: var(--cricpoll-primary);
+}
+
+.cricpoll-auth form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.cricpoll-auth .components-button {
+    align-self: flex-start;
+}

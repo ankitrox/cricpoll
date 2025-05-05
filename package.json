@@ -1,19 +1,32 @@
 {
-  "name": "cricpoll",
-  "version": "1.0.0",
+  "name": "cricpoll-frontend",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "homepage": "https://ankitgade.in/cricpoll",
   "scripts": {
-    "start": "wp-scripts start",
-    "build": "wp-scripts build",
-    "predeploy": "wp-scripts build",
-    "deploy": "gh-pages -d build"
+    "dev": "vite",
+    "build": "vite build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
+    "lint": "eslint . --ext js,jsx --fix"
   },
   "dependencies": {
-    "@wordpress/scripts": "^26.0.0",
+    "@wordpress/api-fetch": "^6.30.0",
+    "@wordpress/components": "^29.8.0",
+    "@wordpress/scripts": "^27.4.0",
+    "date-fns": "^3.6.0",
+    "jwt-decode": "^4.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "gh-pages": "^6.1.0"
-  },
-  "homepage": "https://ankitgade.in/cricpoll"
+    "@types/react": "^18.2.66",
+    "@types/react-dom": "^18.2.22",
+    "@vitejs/plugin-react": "^4.2.1",
+    "eslint": "^8.57.0",
+    "eslint-plugin-react": "^7.34.0",
+    "gh-pages": "^6.1.1",
+    "vite": "^5.2.0"
+  }
 }

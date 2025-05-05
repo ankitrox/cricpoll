@@ -1,0 +1,37 @@
+:root {
+    --cricpoll-primary: #3858e9;
+    --cricpoll-secondary: #f0f0f1;
+    --cricpoll-success: #4ab866;
+    --cricpoll-warning: #f0b849;
+    --cricpoll-error: #d94f4f;
+    --cricpoll-text: #1e1e1e;
+    --cricpoll-light-text: #757575;
+    --cricpoll-border: #dcdcde;
+  }
+  
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    color: var(--cricpoll-text);
+  }
+  
+  .cricpoll-app {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .cricpoll-loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .cricpoll-error {
+    color: var(--cricpoll-error);
+    margin: 10px 0;
+    padding: 5px;
+    background-color: rgba(217, 79, 79, 0.1);
+    border-radius: 2px;
+  }
